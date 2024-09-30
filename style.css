@@ -1,3 +1,18 @@
 body {
     background-image: url(textures/dirt.png);
 }
+
+p {
+    font-family: Minecraftia;
+}
+
+.titleheader {
+    text-align: center;
+    font-size: larger;
+    background-image: url(textures/stone.png);
+}
+
+@font-face {
+    font-family: Minecraftia;
+    src: url(Minecraftia.ttf);
+}
