@@ -8,6 +8,30 @@ p {
     text-shadow: 2px 2px #3F3F3F;
 }
 
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#table {
+    text-align: center;
+    margin: 0;
+}
+
+.button_slot {
+    border: none;
+    background-image: url(textures/slot.png);
+    margin: -1px;
+    margin-bottom: -5px;
+    width: 144px;
+    height: 144px;
+}
+
+.button_slot:hover {
+    background-image: url(textures/slot_highlight.png);
+}
+
 .titleheader {
     text-align: center;
     font-size: xx-large;
