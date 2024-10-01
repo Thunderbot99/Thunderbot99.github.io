@@ -1,5 +1,5 @@
 body {
-    background-image: url(textures/dirt.png);
+    background-image: url(textures/light_dirt_background.png);
 }
 
 p {
@@ -12,12 +12,12 @@ p {
     text-align: center;
     font-size: xx-large;
     background-image: url(textures/stone.png);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    line-height: 75px;
     color: #FFFF55;
-    text-shadow: 4px 4px #3F3F15
+    text-shadow: 4px 4px #3F3F15;
 }
 
 @font-face {
