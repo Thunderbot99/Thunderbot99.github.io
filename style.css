@@ -43,7 +43,8 @@ th, td {
     margin-right: -8px;
     line-height: 75px;
     color: #FFFF55;
-    text-shadow: 4px 4px #3F3F15;
+    text-shadow: 4px 4px #3F3F15;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @font-face {
@@ -51,11 +52,11 @@ th, td {
     src: url(Minecraftia.ttf);
 }
 
-#Refresh {
+.MCButton {
     width: 200px;
     height: 53px;
     position: relative;
-    bottom: 750px;
+    bottom: 725px;
     right: 475px;
     border: none;
     background-image: url(textures/widget.png);
@@ -63,6 +64,29 @@ th, td {
     background-size: cover;
     cursor: pointer;
 }
+
 #Refresh.text {
     text-align: center;
+}
+
+.category.MCButton {
+    width: 195px;
+    height: 48px;
+}
+
+#Easy.MCButton {
+    background-repeat: repeat;
+    background-size: auto;
+    background-image: url(textures/oak_planks.png);
+    bottom: 700px;
+}
+
+#Normal.MCButton {
+    bottom: 675px;
+    background-image: url(textures/iron_block.png);
+}
+
+#Hard.MCButton {
+    bottom: 650px;
+    background-image: url(textures/diamond_block.png);
 }
