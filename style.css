@@ -9,30 +9,29 @@ p {
 }
 
 table {
-    border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+}
+
+th, td {
+    border: 10px solid;
+    border-color: #373737 #FFFFFF #FFFFFF #373737 ;
+    background-color: #8B8B8B;
 }
 
 #table {
     text-align: center;
     margin: 0;
+    position: relative;
 }
 
 .button_slot {
     border: none;
-    background-image: url(textures/slot.png);
-    margin-top: -1px;
-    margin-left: -1px;
-    margin-right: -1px;
-    margin-bottom: 0px;
-    width: 144px;
-    height: 144px;
+    width: 125px;
+    height: 125px;
     background-color:  #8B8B8B;
-}
-
-.button_slot:hover {
-    background-color: #9E9E9E;
+    cursor: pointer;
 }
 
 .titleheader {
@@ -50,4 +49,20 @@ table {
 @font-face {
     font-family: Minecraftia;
     src: url(Minecraftia.ttf);
+}
+
+#Refresh {
+    width: 200px;
+    height: 53px;
+    position: relative;
+    bottom: 750px;
+    right: 475px;
+    border: none;
+    background-image: url(textures/widget.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+#Refresh.text {
+    text-align: center;
 }
