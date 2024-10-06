@@ -12,6 +12,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 th, td {
@@ -47,6 +48,13 @@ th, td {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.instructions {
+    position: relative;
+    bottom:275px;
+    color: #FFFF55;
+    text-shadow: 2px 2px #3F3F15;
+}
+
 @font-face {
     font-family: Minecraftia;
     src: url(Minecraftia.ttf);
@@ -63,6 +71,7 @@ th, td {
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #Refresh.text {
@@ -89,4 +98,18 @@ th, td {
 #Hard.MCButton {
     bottom: 650px;
     background-image: url(textures/diamond_block.png);
+}
+
+#Seed {
+    bottom: 920px;
+    left: 475px;
+    font-family: Minecraftia;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #3F3F3F;
+    text-align: center;
+}
+
+#TitleInstruct {
+    margin-bottom: 100px;
+    padding-bottom: 100px;
 }

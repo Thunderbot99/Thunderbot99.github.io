@@ -3,7 +3,17 @@ data = {
         "Brush",
         "Cactus",
         "Enter The Nether",
-        ""
+        "Tame a Wolf",
+        "Make a Snow Golem",
+        "Trade with a Villager",
+        "Loot a Desert Temple",
+        "Loot a Dungeon",
+        "Loot an Igloo",
+        "Block an Arrow",
+        "Golden Apple",
+        "9 Golden Carrot",
+        "Turn Husk into Drowned",
+        "Sleep in a bed"
     ],
     Normal:[
         "Bucket of Pufferfish",
@@ -13,7 +23,19 @@ data = {
         "Diamond",
         "Break 10 Obsidian",
         "Amethyst Shard",
-        ""
+        "Make an Iron Golem",
+        "Win a Raid",
+        "Build a Herobrine Shrine",
+        "Clear a Trial Chamber",
+        "Cure a Zombie Villager",
+        "Play Any Music Disc",
+        "Blow up 10 TNT in 1 Blast.",
+        "6 Blaze Rods",
+        "Lodestone",
+        "Fill up a Respawn Anchor",
+        "Achieve Return to Sender Advancement",
+        "Shear a Mooshroom",
+        "Kill a Blaze in the Overworld"
     ],
     Hard:[
         "4 Diamond Blocks",
@@ -30,12 +52,21 @@ data = {
         "Shulker Box",
         "Break a Diamond Hoe",
         "Respawn the Enderdragon",
-        "Turtle Helmet"
+        "Turtle Helmet",
+        "Kill 3 Elder Guardians",
+        "Kill a Warden",
+        "Dragon's Breath",
+        "Have All Potion Effects at Once",
+        "Give a Villager a Full Set of Netherite"
     ],
     Insane:[
         "Fully Power a Beacon",
         "Obtain All Mob Heads",
         "Achieve How Did We Get Here Advancement",
-        ""
+        "Tame All Dog and Cat Breeds",
+        "Obtain Every Music Disc",
+        "Brew Every Possible Potion",
+        "Achieve Adventure Time Advancement"
+
     ]
 }

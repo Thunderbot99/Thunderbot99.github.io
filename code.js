@@ -1,4 +1,7 @@
 var category = 0;
+x = Math.floor(Math.random() * 10000000).toString()
+var SEED = x[0] + x[1] + x[2] + x[3] + x[4];
+document.getElementById("Seed").value = SEED;
 function generate(input) {
     for (let i = 0; i < 5; i++) {
         for (let j = 0; j < 5; j++) {
@@ -22,7 +25,11 @@ function buttons_init() {
             });
         }
     }
-    document.getElementById("Refresh").onclick = Refresh;
+    document.getElementById("Refresh").onclick = () => {
+        x = Math.floor(Math.random() * 10000000).toString()
+        SEED = x[0] + x[1] + x[2] + x[3] + x[4];
+        Refresh(SEED);
+    };
     document.getElementById("Easy").onclick = () => {category = 0; update_category(category);}
     document.getElementById("Normal").onclick = () => {category = 1; update_category(category);}
     document.getElementById("Hard").onclick = () => {category = 2; update_category(category);}
@@ -36,6 +43,9 @@ function buttons_init() {
             document.getElementsByClassName("MCButton")[i].children[0].style.textShadow = "2px 2px #3F3F3F";
         });
     }
+    document.getElementById("Seed").oninput = () => {
+        Refresh(document.getElementById("Seed").value);
+    };
 }
 
 function button(dabutton) {
@@ -78,7 +88,7 @@ function button(dabutton) {
 }
 
 function update_category(catego) {
-    Refresh();
+    Refresh(SEED);
     function change_color(cat, state) {
         if (state == true) {
             document.getElementById(cat).children[0].style.color = "#FFFF55";
@@ -114,26 +124,46 @@ function update_category(catego) {
     }
 }
 
-function Refresh() {    
+function Refresh(seed) {  
+    document.getElementById("Seed").value = seed;
     var text = [
         ["","","","",""],
         ["","","","",""],
         ["","","","",""],
         ["","","","",""],
         ["","","","",""]];
+    var memdata = JSON.parse(JSON.stringify(data));
     for (let i = 0; i < 5; i++) {
-        for (let j = 0; j < 5; j++) {            
-            switch (category) {
-                case 0: text[i][j] = data.Easy[(Math.floor(Math.random() * 100)) % 3]; break;
-                case 1: text[i][j] = data.Normal[(Math.floor(Math.random() * 100)) % 7]; break;
-                case 2: text[i][j] = data.Hard[(Math.floor(Math.random() * 100)) % 15]; break;
-                case 3: text[i][j] = data.Insane[(Math.floor(Math.random() * 100)) % 3]; break;
-
+        for (let j = 0; j < 5; j++) {          
+            var index = Math.floor(cyrb128(seed));
+            var element;
+            if (category == 0) {
+                element = memdata.Easy[0]; 
+                memdata.Easy[0] = memdata.Easy[index % memdata.Easy.length]; 
+                memdata.Easy[index % memdata.Easy.length] = element;
+                text[i][j] = memdata.Easy.shift(); 
+            } else if (category == 1) {
+                element = memdata.Normal[0]; 
+                memdata.Normal[0] = memdata.Normal[index % memdata.Normal.length]; 
+                memdata.Normal[index % memdata.Normal.length] = element;
+                text[i][j] = memdata.Normal.shift(); 
+            } else if (category == 2) {
+                element = memdata.Hard[0]; 
+                memdata.Hard[0] = memdata.Hard[index % memdata.Hard.length]; 
+                memdata.Hard[index % memdata.Hard.length] = element;
+                text[i][j] = memdata.Hard.shift();                 
+            } else if (category == 3) {
+                element = memdata.Insane[0]; 
+                memdata.Insane[0] = memdata.Insane[index % memdata.Insane.length]; 
+                memdata.Insane[index % memdata.Insane.length] = element;
+                text[i][j] = memdata.Insane.shift(); 
             }
         }
     }
     generate(text);
 }
+
+
 
 update_category(category);
 buttons_init();
