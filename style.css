@@ -1,3 +1,16 @@
+#Easy-text-short {
+    display: none;
+}
+#Normal-text-short {
+    display: none;
+}
+#Hard-text-short {
+    display: none;
+}
+#Restart-text-short {
+    display: none;
+}
+
 body {
     background-image: url(textures/light_dirt_background.png);
 }
@@ -50,9 +63,14 @@ th, td {
 
 .instructions {
     position: relative;
-    bottom:275px;
+    bottom: 675px;
     color: #FFFF55;
     text-shadow: 2px 2px #3F3F15;
+    text-align: justify;
+}
+
+#Multiplayer.instructions {
+    bottom: 875px;
 }
 
 @font-face {
@@ -72,10 +90,6 @@ th, td {
     background-size: cover;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#Refresh.text {
-    text-align: center;
 }
 
 .category.MCButton {
@@ -110,6 +124,80 @@ th, td {
 }
 
 #TitleInstruct {
+    position: relative;
     margin-bottom: 100px;
+    padding-bottom: 300px;
+    bottom: 200px;
+}
+
+#TitleMultiplayer{
+    background-image: none;
+    position: relative;
+    bottom: 700px;
     padding-bottom: 100px;
+    box-shadow: none;
+}
+
+@media (max-width: 1140px) {
+    #Refresh.MCButton {
+        width: 53px;
+        height: 53px;
+        right: 425px;
+    }
+    #Hard.MCButton {
+        width: 53px;
+        height: 53px;
+        right: 425px;
+    }
+    #Normal.MCButton {
+        width: 53px;
+        height: 53px;
+        right: 425px;
+    }
+    #Easy.MCButton {
+        width: 53px;
+        height: 53px;
+        right: 425px;
+    }
+
+    #Easy-text-short {
+        display: inline-block;
+    }
+    #Normal-text-short {
+        display: inline-block;
+    }
+    #Hard-text-short {
+        display: inline-block;
+    }
+    #Restart-text-short {
+        display: inline-block;
+    }
+
+    #Easy-text-long {
+        display: none;
+    }
+    #Normal-text-long {
+        display: none;
+    }
+    #Hard-text-long {
+        display: none;
+    }
+    #Restart-text-long {
+        display: none;
+    }
+    #TitleInstruct.titleheader {
+        padding-bottom: 1200px;
+    }
+    #TitleMultiplayer{
+        bottom: 1600px;
+    }
+    .instructions{
+        bottom: 1575px; 
+    }
+    #Multiplayer.instructions {
+        bottom: 1775px;
+    }
+    .titleheader {
+        margin-right: -100px;
+    }
 }

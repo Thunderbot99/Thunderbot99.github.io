@@ -44,7 +44,8 @@ function buttons_init() {
         });
     }
     document.getElementById("Seed").oninput = () => {
-        Refresh(document.getElementById("Seed").value);
+        SEED = document.getElementById("Seed").value;
+        Refresh(SEED);
     };
 }
 
@@ -162,8 +163,6 @@ function Refresh(seed) {
     }
     generate(text);
 }
-
-
 
 update_category(category);
 buttons_init();

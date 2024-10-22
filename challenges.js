@@ -13,7 +13,11 @@ data = {
         "Golden Apple",
         "9 Golden Carrot",
         "Turn Husk into Drowned",
-        "Sleep in a bed"
+        "Sleep in a bed",
+        "12 Leather",
+        "18 Smooth Stone",
+        "Blast Furnace",
+        "Crossbow"
     ],
     Normal:[
         "Bucket of Pufferfish",
@@ -35,7 +39,8 @@ data = {
         "Fill up a Respawn Anchor",
         "Achieve Return to Sender Advancement",
         "Shear a Mooshroom",
-        "Kill a Blaze in the Overworld"
+        "Kill a Blaze in the Overworld",
+        "Reach the Nether Roof"
     ],
     Hard:[
         "4 Diamond Blocks",
@@ -57,7 +62,7 @@ data = {
         "Kill a Warden",
         "Dragon's Breath",
         "Have All Potion Effects at Once",
-        "Give a Villager a Full Set of Netherite"
+        "Give a Villager a Full Set of Netherite",
     ],
     Insane:[
         "Fully Power a Beacon",
@@ -66,7 +71,10 @@ data = {
         "Tame All Dog and Cat Breeds",
         "Obtain Every Music Disc",
         "Brew Every Possible Potion",
-        "Achieve Adventure Time Advancement"
-
+        "Achieve Adventure Time Advancement",
+        "Kill The Enderdragon 20 Times",
+        "Obtain All Armor Trims",
+        "Achieve Monsters Hunted Advancement",
+        "Reach The Farlands"
     ]
 }
