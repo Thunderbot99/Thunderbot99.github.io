@@ -1,16 +1,3 @@
-#Easy-text-short {
-    display: none;
-}
-#Normal-text-short {
-    display: none;
-}
-#Hard-text-short {
-    display: none;
-}
-#Restart-text-short {
-    display: none;
-}
-
 body {
     background-image: url(textures/light_dirt_background.png);
 }
@@ -130,12 +117,25 @@ th, td {
     bottom: 200px;
 }
 
-#TitleMultiplayer{
+#TitleMultiplayer.titleheader{
     background-image: none;
     position: relative;
     bottom: 700px;
     padding-bottom: 100px;
     box-shadow: none;
+}
+
+#Easy-text-short {
+    display: none;
+}
+#Normal-text-short {
+    display: none;
+}
+#Hard-text-short {
+    display: none;
+}
+#Restart-text-short {
+    display: none;
 }
 
 @media (max-width: 1140px) {
