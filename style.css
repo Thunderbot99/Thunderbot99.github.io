@@ -187,12 +187,14 @@ th, td {
     }
     #TitleInstruct.titleheader {
         padding-bottom: 1200px;
+        margin-bottom: 100px;
     }
-    #TitleMultiplayer{
+    #TitleMultiplayer.titleheader{
         bottom: 1600px;
     }
     .instructions{
         bottom: 1575px; 
+        left: 40px;
     }
     #Multiplayer.instructions {
         bottom: 1775px;
